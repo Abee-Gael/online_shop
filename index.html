@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: powderblue">
+<html lang="en" style="background-color: darkblue; background-image:url(./assets/Abract02.png); background-repeat: no-repeat;  background-attachment: fixed;   background-size: cover;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +23,9 @@
 	<!-- Drop Down list -->
 	<link rel="stylesheet" href="./css/dropdown.css">
 	
+	<!-- Footer Video -->
+	<link rel="stylesheet" href="css/videio.css">
+	
 	
 	   <meta charset="UTF-8">
       <title>Chamb - Responsive E-commerce HTML5 Template</title>
@@ -44,15 +47,28 @@
       <link rel="stylesheet" href="css/responsive.css">
 	
 	
+					<style>
+						.column {
+								  float: left;
+								  width: 19%;
+								  padding: 5px;
+								}
+						.row::after {
+									  content: "";
+									  clear: both;
+									  display: table;
+									}
+			  </style>
+	
 
 </head>
 
 <header style="background-color:black">
 		<!-- logo -->
-		<img src="./images/008.jpg" alt="BLUE WHALE LOGO"  width=25%>
+		<img src="./assets/008.jpg" alt="BLUE WHALE LOGO"  width=25%>
 	<!-- ----------------------------  Navigation ---------------------------------------------- -->
 
-										<nav class="nav" style="background-color: gray" >
+										<nav class="nav" style="background-color: gray" style="position: relative;">
 									
 											<div class="nav-menu flex-row">
 												<div class="nav-brand">
@@ -66,11 +82,11 @@
 													</div>
 												</div>
 												<div>
-													<ul class="nav-items">
+													<ul class="nav-items" style="position: relative;">
 														<li class="nav-link">
 															<a href="./index.html">Home</a>
 														</li>
-														<li class="dropdown">																														<div class="dropdown">
+														<li class="dropdown" style="position: relative;">																														<div class="dropdown">
 																<button onclick="myFunction()" class="dropbtn" > Category </button>
 																<div id="myDropdown" class="dropdown-content">																
 																<a href="#">S </a>
@@ -104,7 +120,7 @@
 															
 														</li>
 														<li class="nav-link">
-															<a href="C:\Users\hezron\Desktop\Blooger_Website-master\Pages\zipcode.html">Zip Code</a>
+															<a href="">Zip Code</a>
 														</li>
 														<li class="nav-link">
 															<a href="#">Pages</a>
@@ -116,18 +132,11 @@
 															<a href="#">Contact Us</a>
 														</li>
 														<li class="nav-link">
-															<a href="./Pages/cart.html"> Cart </a>
+															<a href="./cart.html"> Cart </a>
 														</li>
 													</ul>
 </div>
-												<div class="social text-gray">
-													<a href="#"><i class="fab fa-facebook-f"></i></a>
-													<a href="#"><i class="fab fa-instagram"></i></a>
-													<a href="#"><i class="fab fa-twitter"></i></a>
-													<a href="#"><i class="fab fa-youtube"></i></a>
-												</div>
-												</div>	
-
+												
 <div>
 
 </div>
@@ -152,7 +161,7 @@
             <div class="site-background" data-aos="fade-up" data-aos-delay="100">
                 <h3> Shop Till you Drop </h3>
                 <h1> Blue Whale Online Shop </h1>
-                <button class="btn" onclick="window.location.href='./Pages/productpage1.html';" > Go_Shopping </button>
+                <button class="btn" onclick="window.location.href='./productpage1.html';" > Go_Shopping </button>
             </div>
         </section>
 
@@ -165,34 +174,34 @@
                 <div class="container">
                     <div class="owl-carousel owl-theme blog-post">
                         <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./images/Blog-post/post-1.jpg" alt="post-1">
+                            <img src="./assets/images/Blog-post/post-1.jpg" alt="post-1">
                             <div class="blog-title">
                                 <h3>London Fashion week's continued the evolution</h3>
-                                <button class="btn btn-blog">Fashion</button>
+                                <button class="btn" onclick="window.location.href='./productpage1.html';"  style="color: gold;"> Go_Shopping </button>
                                 <span>2 minutes</span>
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
-                            <img src="./images/Blog-post/post-3.jpg" alt="post-1">
+                            <img src="./assets/images/Blog-post/post-3.jpg" alt="post-1">
                             <div class="blog-title">
-                                <h3>London Fashion week's continued the evolution</h3>
-                                <button class="btn btn-blog">Fashion</button>
+                                <h3> Items With Offers </h3>
+                                <button class="btn" onclick="window.location.href='./productpage1.html';" style="color: gold;" > Go_Shopping </button>
                                 <span>2 minutes</span>
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
-                            <img src="./images/Blog-post/post-2.jpg" alt="post-1">
+                            <img src="./assets/images/Blog-post/post-2.jpg" alt="post-1">
                             <div class="blog-title">
-                                <h3>London Fashion week's continued the evolution</h3>
-                                <button class="btn btn-blog">Fashion</button>
+                                <h3> Latest Fashion Clothes </h3>
+                                <button class="btn" onclick="window.location.href='./productpage1.html';" style="color: gold;"> Go_Shopping </button>
                                 <span>2 minutes</span>
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./images/Blog-post/post-5.png" alt="post-1">
+                            <img src="./assets/images/Blog-post/post-5.png" alt="post-1">
                             <div class="blog-title">
                                 <h3>London Fashion week's continued the evolution</h3>
-                                <button class="btn btn-blog">Fashion</button>
+                                <button class="btn" onclick="window.location.href='./productpage1.html';" style="color: gold;"> Go_Shopping </button>
                                 <span>000.2 minutes</span>
                             </div>
                         </div>
@@ -251,81 +260,140 @@
                     </div>
 <!-- ................................................................................................................--->
 
-<div class="page-content-product">
+<style>
+		
+        } 
+</style>
+
+   <div class="page-content-product">
          <div class="main-product">
-               <div class="row clearfix">
-                  <div class="col-lg-3 col-sm-6 col-md-3">
+               <div class="row">
+                  <div class="column">
                      <a href="productpage.html">
                         <div class="box-img">
                            <h4> Home & Office  </h4>
-                           <img src="images/product/1.png" alt="" />
+                           <img src="./assets/images/product/1.png" alt="" />
                         </div>
                      </a>
                   </div>
-                  <div class="col-lg-3 col-sm-6 col-md-3">
+                  <div class="column">
                      <a href="productpage.html">
                         <div class="box-img">
-                           <h4>Electronics</h4>
-                           <img src="images/product/2.png" alt="" />
+                           <h4> Electronics </h4>
+                           <img src="./assets/images/product/2.png" alt="" />
                         </div>
                      </a>
                   </div>
-                  <div class="col-lg-3 col-sm-6 col-md-3">
+                  <div class="column">
                      <a href="productpage.html">
                         <div class="box-img">
                            <h4> Fashion </h4>
-                           <img src="images/product/4.png" alt="" />
+                           <img src="./assets/images/product/4.png" alt="" />
                         </div>
                      </a>
                   </div>
-                  <div class="col-lg-3 col-sm-6 col-md-3">
+                  <div class="column">
                      <a href="productpage.html">
                         <div class="box-img">
                            <h4> Baby Product </h4>
-                           <img src="images/product/5.png" alt="" />
+                           <img src="./assets/images/product/5.png" alt="" />
                         </div>
                      </a>
                   </div>
-                  <div class="col-lg-3 col-sm-6 col-md-3">
+                  <div class="column">
                      <a href="productpage.html">
                         <div class="box-img">
                            <h4> Sporting Goods  </h4>
-                           <img src="images/product/10.png" alt="" />
+                           <img src="./assets/images/product/10.png" alt="" />
                         </div>
                      </a>
                   </div>
-                  <div class="col-lg-3 col-sm-6 col-md-3">
+                  <div class="column">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Gardening Tools</h4>
+                           <img src="./assets/images/product/11.png" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="column">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4> Gaming Product </h4>
+                           <img src="./assets/images/product/12.png" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="column">
                      <a href="productpage.html">
                         <div class="box-img">
                            <h4>Product</h4>
-                           <img src="images/product/11.png" alt="" />
+                           <img src="./assets/images/product/13.png" alt="" />
                         </div>
                      </a>
                   </div>
-                  <div class="col-lg-3 col-sm-6 col-md-3">
+				  
+				 
+				 <div class="column">
                      <a href="productpage.html">
                         <div class="box-img">
-                           <h4>Product</h4>
-                           <img src="images/product/12.png" alt="" />
+                           <h4> Lighting </h4>
+                           <img src="./assets/images/product/13.png" alt="" />
                         </div>
                      </a>
                   </div>
-                  <div class="col-lg-3 col-sm-6 col-md-3">
+				  
+				  <div class="column">
                      <a href="productpage.html">
                         <div class="box-img">
-                           <h4>Product</h4>
-                           <img src="images/product/13.png" alt="" />
+                           <h4> Tables </h4>
+                           <img src="./assets/images/product/13.png" alt="" />
                         </div>
                      </a>
                   </div>
-                  <div class="categories_link">
-                     <a href="#">Browse all categories here</a>
+				 <div class="column">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4> Analuoge Watches </h4>
+                           <img src="./assets/images/product/watch.png" alt=" Go " />
+                        </div>
+                     </a>
                   </div>
-               </div>
-            </div>
-         </div>
-      </div>
-
+				 <div class="column">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4> Phones & Tablets </h4>
+                           <img src="./assets/images/product/watch.png" alt=" Go " />
+                        </div>
+                     </a>
+                  </div>
+				 <div class="column">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4> Health & Beauty </h4>
+                           <img src="./assets/images/product/watch.png" alt=" Go " />
+                        </div>
+                     </a>
+                  </div>
+				 <div class="column">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4> Computing </h4>
+                           <img src="./assets/images/product/watch.png" alt=" Go " />
+                        </div>
+                     </a>
+                  </div>
+				 <div class="column">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4> Bike </h4>
+                           <img src="./assets/images/product/watch.png" alt=" Go " />
+                        </div>
+                     </a>
+                  </div>				  
+				  				  
+				  
+	  </div>
 
 <!-- ................................................................................................................--->
                     <div class="popular-post">
@@ -356,7 +424,8 @@
 
     <!-- --------------------------- Footer ---------------------------------------- -->
 
-    <footer class="footer" background-color="Magenta">
+    <footer class="footer" style="background-image:url(./assets/footers.png); background-repeat: no-repeat;  background-attachment: fixed; background-size: cover;">
+									
         <div class="container">
             <div class="about-us" data-aos="fade-right" data-aos-delay="200">
                 <h2>About us</h2>
@@ -406,8 +475,11 @@
         </div>
     </footer>
 
-    <!-- -------------x------------- Footer --------------------x------------------- -->
-
+    <!-- -------------x------------- End Footer --------------------x------------------- -->
+	
+	
+	
+	<!-------------------------  java script --------------------------------------------->
     <!-- Jquery Library file -->
     <script src="./js/Jquery3.4.1.min.js"></script>
 
