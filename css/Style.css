@@ -578,8 +578,62 @@ footer.footer .move-up span:hover{
 
 }
 
+element.style {
+}
+<style>
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-top-color: initial;
+    border-top-style: initial;
+    border-top-width: 0px;
+    border-right-color: initial;
+    border-right-style: initial;
+    border-right-width: 0px;
+    border-bottom-color: initial;
+    border-bottom-style: initial;
+    border-bottom-width: 0px;
+    border-left-color: initial;
+    border-left-style: initial;
+    border-left-width: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+<style>
+img {
+    vertical-align: middle;
+}
+<style>
+img {
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
+<style>
+* {
+    box-sizing: border-box;
+}
+.box-img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(0, 125, 234);
+}
+
 .box-img {
-    background: #051d36;
     text-align: center;
     padding-bottom: 30px;
     min-height: 280px;
@@ -588,12 +642,34 @@ footer.footer .move-up span:hover{
     border-bottom-width: 3px;
     border-bottom-style: solid;
     border-bottom-color: rgb(0, 125, 234);
-
-    transition: ease all 0.5s;
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    background: rgb(5, 29, 54);
+}
+.box-img {
+    background: #051d36;
+    text-align: center;
+    padding-bottom: 20px;
+    min-height: 180px;
+  
+    margin-bottom: 20px;
+    position: relative;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0, 125, 234);
+
+    transition: ease all 0.4s;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+  
+  margin-top: 8px;
+  vertical-align: middle;
+}
 }
 .box-img h4 {
 	color: #fff;
@@ -624,7 +700,7 @@ footer.footer .move-up span:hover{
 	top: 40%;
 }
 img {
-    max-width: 100%;
+    max-width: 45%;
     height: auto;
     vertical-align: middle;
     border-top-color: initial;
@@ -644,10 +720,37 @@ img {
     border-image-width: initial;
     border-image-outset: initial;
     border-image-repeat: initial;
+    box-sizing: border-box;
 }
 
+*{box-sizing: border-box;}
+img {    vertical-align: middle;}
+
+img {
+    border: 0;
+    border-top-color: initial;
+    border-top-style: initial;
+    border-top-width: 0px;
+    border-right-color: initial;
+    border-right-style: initial;
+    border-right-width: 0px;
+    border-bottom-color: initial;
+    border-bottom-style: initial;
+    border-bottom-width: 0px;
+    border-left-color: initial;
+    border-left-style: initial;
+    border-left-width: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
 :after, :before {
     box-sizing: border-box;
+
+ 
+  
 
 
 /*        x      Viewport less then or equal to 520px       x     */
