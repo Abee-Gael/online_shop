@@ -1,13 +1,27 @@
+<!Doctype html>
 <html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <title>JS Shopping Cart | Webdevtrick.com</title>
+ <!-- Metadata  -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="Online Shop, Blue Whale, Shopping">    
+    <meta name="author" content="Abi">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SHOPPING CART BLUE WHALE</title>
 
-<link rel="stylesheet" href="cart.css">
- <link rel="stylesheet"  href="./css/style.css">
+	<link rel="stylesheet"  href="./css/navbar.css">
+	<link rel="stylesheet" href="./css/cart.css">
+	<link rel="stylesheet"  href="./css/style.css">
 </head>
 
 <body>
+			<!--   Navigation bar  -->
+							<nav class="topnav" >
+							<a href="../index.html"> Home </a>
+							<a href="#"> Zip Code </a>							
+							<a href="../cart.html"> Cart </a>
+							<a href="./login.html"> Login </a>
+							<input type="text" placeholder="Search..">				
+							</nav>
 
 <div class="row">   
     <div class="">
@@ -22,7 +36,7 @@
                 </div>
             </div>
             <div id="cartItems">Loading cart...</div>
-            Total price: <strong id="totalPrice">KSH 0</strong>
+            Total price: <strong id="totalPrice"></strong>
         </div>
       
     </div>
@@ -31,7 +45,7 @@
 <p>Plus: TAX <b style="color:red;">6%</b></p>
 <p>plus Delivery Fee <b style="color:red;">15%</b> </p>
 <p title="if Product is Downloadable">plus Service fee <b style="color:red;">10%</b></p>
-<p>TOTAL</p>  <strong id="totalPrice1">KSH 0</strong>
+<p>TOTAL</p>  <strong id="result">KSH 0</strong>
 
 <script type="text/template" id="cartT">
 <% _.each(items, function (item) { %> <div class = "panel"> <h3> <%= item.name %> </h3>  <span class="label">
@@ -39,16 +53,13 @@
 {%>s
 <%}%> for <%= item.total %> KSH </span > </div>
 <% }); %>
-
-
-
-
-
+num1 = document.getElementById("totalPrice").value;  
+document.getElementById("result").innerHTML = num1 * 0.06 * 0.15;
 </script>
  
-<script src="main.js"></script>
-<script src="main1.js"></script>
-<script  src="cart.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/main1.js"></script>
+<script  src="/jscart.js"></script>
  
 </body>
 </html>
