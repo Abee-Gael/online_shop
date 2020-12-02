@@ -1,32 +1,156 @@
 <!DOCTYPE html>
-<html>
-   <head>
-     <!-- Metadata  -->
-    <meta charset="utf-8">
-    <meta name="keywords" content="Online Shop, Blue Whale, Shopping">
-    <meta name="description" content="Computer Science Full course">
-    <meta name="author" content="Abi">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> admin@BlueWhale.org </title>
-	
-<!--  Cascadding Style Sheets Link -->
-	<link rel="stylesheet"  href="../css/admin.css">
-   </head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
 
- <body class="body">
- <p style="text-align: center; color: Green;"><b> ADMIN PAGE </b></p>
-		 <div class="sidebar">
-		  <a class="active" href="../index.html" target="iframe1">Home Page</a>
-		  <a href="../productPage.html">Product Page</a>
-		  <a href="../cart.html">Cart </a>
-		
-		</div>
+    <script src="../scripts/font-awesome.js" crossorigin="anonymous"></script>
 
-		<!-- Page content -->
-<div class="content">
+    <title>Blue Whale Administration</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- side Navigation bar-->
+      <aside class="sidebar" id="sidebar">
+        <a href="">Blue Whale</a>
+        <hr />
+        <ul class="list-unstyled">
+          <li>
+            <a href=""><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-pizza-slice"></i> Products</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-user-friends"></i> Users</a>
+          </li>
+          <li>
+            <a href=""><i class="far fa-comments"></i> Comments</a>
+          </li>
+        </ul>
+      </aside>
 
-</div>
-    
-   </body>
+      <!-- Content-Wrapper -->
+      <main class="content-wrapper" id="main-content">
+        <!-- Top bar -->
+        <nav id="navbar" class="topbar">
+          <button
+            id="sidebarToggleTop"
+            onclick="sidebarToggler();"
+            class="mr-auto"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="dropdown ml-auto">
+            <a href="">Account</a>
+            <div class="dropdown-content">
+              <ul>
+                <li>
+                  <a href=""><i class="fas fa-user"></i> Profile</a>
+                </li>
+                <br />
+                <li>
+                  <a href=""><i class="fas fa-cogs"></i> Change Password</a>
+                </li>
+                <li><hr /></li>
+                <li>
+                  <a href=""><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Content area -->
+        <article class="content">
+          <h1>Products</h1>
+          <div class="underline"></div>
+          <br />
+          <button class="ml-auto btn">
+            <i class="fas fa-plus"></i> Add Dish
+          </button>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Product Name</th>
+                  <th>Price</th>
+                  <th>Category</th>
+                  <th>Description</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Clothes</td>
+                  <td>1000</td>
+                  <td>Fashion</td>
+                  <td>
+                    Our clothes section has all variety of clothes from women clothes, mens clothes
+                    to babys clothes
+                  </td>
+                  <td>
+                    <a class="btn bg-warning" href="">Delete</a>
+                    <a class="btn bg-success" href="">Edit</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Phones</td>
+                  <td>5000</td>
+                 <td>Electronics</td>
+                  <td>
+                    We have different types of phone gadgets from Apple, Oppo,Samsung, Tecno etc.
+                  </td>
+                  <td>
+                    <a class="btn bg-warning" href="">Delete</a>
+                    <a class="btn bg-success" href="">Edit</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Dining Tables</td>
+                  <td>50,800</td>
+                  <td>Furniture</td>
+                  <td>
+                    Our furnitures are made from the best wood such as iroko wood. They are also
+                    very durable and easy to clean.
+                  </td>
+                  <td>
+                    <a class="btn bg-warning" href="">Delete</a>
+                    <a class="btn bg-success" href="">Edit</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Balla</td>
+                  <td>1800</td>
+                  <td>Sporting Goods</td>
+                  <td>
+                   Our sporting goods are of very good quality so you can be sure they are very
+                   durable.
+                  </td>
+                  <td>
+                    <a class="btn bg-warning" href="">Delete</a>
+                    <a class="btn bg-success" href="">Edit</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="align-self-center">
+            <p class="text-center">All right Reserved. &copy;2020 Mama fish</p>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+  </body>
 </html>
